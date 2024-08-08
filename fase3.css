@@ -34,13 +34,13 @@ button {
 
 /* The animation */
 @keyframes marquee{
-	0%{transform: translateX(-100%);}
+	0%{transform: translateX(-40%);}
 	100%{transform: translateX(100%);}
 }
 
 /* media query to enable animation for only those who want it */
-@media (prefers-reduced-motion: no-preference) {
+@media screen {
 	.moving-fruits{
-		animation: marquee 14s linear infinite;
+		animation: marquee 8s linear infinite;
 	}
 }
