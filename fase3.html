@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Fase 3</title>
+		<link rel="stylesheet" type="text/css" href="fase3.css">
+	</head>
+	<body>	
+		<div class="area_score">
+			<h2 class="score">
+				Pontos: <span class="score_numero">0</span>
+			</h2>
+		</div>
+		<div class="area_jogo">
+			<marquee direction="right" scrollamount="12" loop='1'>
+				<span id="img1"></span>
+				<span id="img2"></span>
+				<span id="img3"></span>
+			</marquee>
+		</div>
+		<div class="distancia"></div>
+		<div class="area_baixo">
+			<button value="0" onclick="obterResposta(this.value)">0</button>
+			<button value="1" onclick="obterResposta(this.value)">1</button>
+			<button value="2" onclick="obterResposta(this.value)">2</button><br>
+			<button value="3" onclick="obterResposta(this.value)">3</button>
+			<button value="4" onclick="obterResposta(this.value)">4</button>
+			<button value="5" onclick="obterResposta(this.value)">5</button><br>
+			<button value="6" onclick="obterResposta(this.value)">6</button>
+			<button value="7" onclick="obterResposta(this.value)">7</button>
+			<button value="8" onclick="obterResposta(this.value)">8</button><br>
+			<button value="9" onclick="obterResposta(this.value)">9</button>
+		</div>
+		<script src="fase3.js"></script>
+	</body>
+</html>

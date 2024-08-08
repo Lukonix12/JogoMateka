@@ -1,0 +1,25 @@
+.area_jogo {
+	padding-top: 8%;
+}
+
+.area_baixo {
+	padding-left: 40%;
+}
+
+.distancia {
+	height: 60px;
+}
+
+.score{
+	width: 180px;
+	border: 2px solid brown;
+	text-align: center;
+}
+
+button {
+	width: 12%;
+	height: 9vh;
+	font-size: 1.5em;
+	border: 2px solid brown;
+	margin: 1px;	
+}
