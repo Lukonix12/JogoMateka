@@ -7,7 +7,7 @@
 }
 
 .distancia {
-	height: 60px;
+	height: 70px;
 }
 
 .score{
@@ -16,10 +16,31 @@
 	text-align: center;
 }
 
+marquee{
+	width: 100%;
+}
+
 button {
 	width: 12%;
 	height: 9vh;
 	font-size: 1.5em;
 	border: 2px solid brown;
 	margin: 1px;	
+}
+
+.moving-text:hover{
+	animation-play-state: paused;
+}
+
+/* The animation */
+@keyframes marquee{
+	0%{transform: translateX(-100%);}
+	100%{transform: translateX(100%);}
+}
+
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+	.moving-fruits{
+		animation: marquee 14s linear infinite;
+	}
 }
