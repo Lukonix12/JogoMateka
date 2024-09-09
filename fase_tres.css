@@ -1,0 +1,54 @@
+.area_jogo {
+	padding-top: 8%;
+}
+
+.area_baixo {
+	padding-left: 40%;
+}
+
+.distancia {
+	height: 70px;
+}
+
+.score{
+	width: 180px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: rgb(179, 138, 84);
+}
+
+body{
+	background-image:url('../../image/barraca.jfif');
+	background-size: 100vw 100vh;
+}
+
+marquee{
+	width: 100%;
+}
+
+button {
+	width: 6.5vw;
+	height: 6.5vh;
+	font-size: 1.2em;
+	background-color: burlywood;
+	border: 2px solid black;
+	margin: 0.05%;	
+}
+
+button:enabled:hover {
+	background-color: rgb(190, 148, 92);
+}
+
+.moving-text:hover{
+	animation-play-state: paused;
+}
+
+/* The animation */
+@keyframes marquee{
+	0%{transform: translateX(-40%);}
+	100%{transform: translateX(100%);}
+}
+
+.run-animation{
+	animation: marquee 6s linear 1
+}
